@@ -14,7 +14,7 @@ with open('user_movie_recommendation.pkl', 'rb') as f:
 
 # Function to fetch the poster using TMDb API
 def fetch_poster(movie_id):
-    url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key=30938e2a0f53c498f777852a44ac8e82&language=en-US"
+    url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key=()&language=en-US"
     data = requests.get(url)
     data = data.json()
     poster_path = data.get('poster_path')
